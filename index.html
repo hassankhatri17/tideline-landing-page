@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tideline — Know the water before you paddle out</title>
+<meta name="description" content="Tideline tracks live tide and swell conditions for your local breaks and alerts you before your window opens.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Manrope:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap" aria-label="Primary">
+    <div class="logo"><span class="dot"></span>Tideline</div>
+    <ul class="nav-links">
+      <li><a href="#conditions">Live conditions</a></li>
+      <li><a href="#how">Alerts</a></li>
+      <li><a href="#coverage">Coverage</a></li>
+    </ul>
+    <a class="nav-cta" href="#signup">Get today's read</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+  </nav>
+  <nav class="mobile-menu wrap" id="mobileMenu" aria-label="Mobile">
+    <a href="#conditions">Live conditions</a>
+    <a href="#how">Alerts</a>
+    <a href="#coverage">Coverage</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div>
+      <p class="eyebrow">Live tide &amp; swell</p>
+      <h1>Know the water before you paddle out.</h1>
+      <p class="lede">Tideline reads the tide, swell, and wind at your local breaks and tells you exactly when your window opens — so you check your phone once, not five times before dawn.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="#signup">Get today's read — free</a>
+        <a class="btn-secondary" href="#conditions">See live conditions</a>
+      </div>
+    </div>
+
+    <div class="tide-panel" id="conditions">
+      <div class="tide-panel-head">
+        <span class="place">Ocean Beach, SF</span>
+        <span class="now">UPDATED 06:14</span>
+      </div>
+      <p class="tide-status">Rising · 3.1 ft and climbing</p>
+      <svg class="tide-svg" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tide height over 24 hours, currently rising toward a high tide">
+        <line class="tide-baseline" x1="0" y1="110" x2="600" y2="110"/>
+        <path class="tide-curve" d="M0,150 C60,50 110,50 170,150 C230,250 280,250 340,150 C400,50 450,50 510,150 C560,230 590,240 600,150"/>
+        <circle class="tide-marker-ring" cx="230" cy="205" r="9"/>
+        <circle class="tide-marker" cx="230" cy="205" r="5"/>
+      </svg>
+      <div class="tide-legend">
+        <span>12 AM</span><span>6 AM</span><span>NOON</span><span>6 PM</span><span>12 AM</span>
+      </div>
+      <div class="tide-next">Next high tide <strong>5.8 ft</strong> at <strong>9:42 AM</strong> — 3h 28m away</div>
+    </div>
+  </section>
+
+  <section class="session wrap">
+    <div class="session-head">
+      <div>
+        <p class="eyebrow">This morning's read</p>
+        <h2>Three breaks, one glance</h2>
+      </div>
+      <span class="session-time data">Mon Jul 27 · 06:14 PDT</span>
+    </div>
+    <div class="break-grid">
+      <article class="break-card">
+        <p class="name">Ocean Beach</p>
+        <div class="break-row"><span class="k">Swell</span><span class="v">5.2 ft @ 14s</span></div>
+        <div class="break-row"><span class="k">Wind</span><span class="v">6 kt offshore</span></div>
+        <div class="break-row"><span class="k">Tide</span><span class="v">Rising</span></div>
+        <span class="tide-tag">In your window</span>
+      </article>
+      <article class="break-card">
+        <p class="name">Linda Mar</p>
+        <div class="break-row"><span class="k">Swell</span><span class="v">3.4 ft @ 11s</span></div>
+        <div class="break-row"><span class="k">Wind</span><span class="v">14 kt onshore</span></div>
+        <div class="break-row"><span class="k">Tide</span><span class="v">Near high</span></div>
+        <span class="tide-tag">Choppy by 9</span>
+      </article>
+      <article class="break-card">
+        <p class="name">Montara</p>
+        <div class="break-row"><span class="k">Swell</span><span class="v">4.6 ft @ 13s</span></div>
+        <div class="break-row"><span class="k">Wind</span><span class="v">4 kt offshore</span></div>
+        <div class="break-row"><span class="k">Tide</span><span class="v">Falling</span></div>
+        <span class="tide-tag">In your window</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="features wrap" id="how">
+    <div class="section-head">
+      <p class="eyebrow">How it works</p>
+      <h2>Built around the window, not the app</h2>
+    </div>
+    <div class="feature-grid">
+      <article class="feature">
+        <span class="tag">Live</span>
+        <h3>Tide and swell, together</h3>
+        <p>Most apps show you one or the other. Tideline overlays tide height, swell size, period, and wind on a single line so you can see the whole picture at a glance.</p>
+      </article>
+      <article class="feature">
+        <span class="tag">Custom</span>
+        <h3>Alerts for your window</h3>
+        <p>Tell Tideline what conditions you paddle out in, and it'll message you once — right when your break enters that range, not every hour in between.</p>
+      </article>
+      <article class="feature">
+        <span class="tag">Offline</span>
+        <h3>Charts that work at the beach</h3>
+        <p>Tide curves and swell forecasts are cached on your phone before you leave service, so a dead parking-lot signal never leaves you guessing.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="proof wrap" id="coverage">
+    <div>
+      <div class="stat">3,200+</div>
+      <div class="label">Breaks tracked</div>
+    </div>
+    <div>
+      <div class="stat">41 min</div>
+      <div class="label">Avg. alert lead time</div>
+    </div>
+    <div>
+      <div class="stat">14</div>
+      <div class="label">Coastlines covered</div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <p class="eyebrow">Ready when the swell is</p>
+      <h2>Your next window is already forming.</h2>
+      <a class="btn-primary" href="#signup">Get today's read — free</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <div class="logo" style="font-size:1.05rem;"><span class="dot"></span>Tideline</div>
+    <ul class="foot-links">
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <p class="copy">© 2026 Tideline</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
